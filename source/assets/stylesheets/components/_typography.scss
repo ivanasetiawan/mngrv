@@ -1,0 +1,75 @@
+/*doc
+---
+title: Typography
+name: typography
+category: Typography
+---
+
+Font we're using are:
+Gotham
+
+```html_example
+<h1>This is H1</h1>
+<h2>This is H2</h2>
+```
+*/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: $font-mangrove;
+  font-weight: normal;
+  line-height: 1.25;
+}
+
+h1, .h1 {
+  @include rem(margin-bottom, 1rem);
+  font-size: 45px;
+  font-family: $font-mangrove-bold;
+  line-height: 1;
+  @media (min-width: $screen-md) { font-size: 50px; }
+  @media (min-width: $screen-lg) { font-size: 56px; }
+}
+
+.h1-alt {
+  font-size: 35px;
+  font-family: $font-mangrove-bold;
+  line-height: 1;
+  @media (min-width: $screen-md) { font-size: 40px; }
+  @media (min-width: $screen-lg) { font-size: 46px; }
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin-bottom: .5em;
+  & + p,
+  & + ol,
+  & + ul {
+    margin-top: 0;
+  }
+}
+
+h2, .h2 {
+  font-size: 25px;
+  @media (min-width: $screen-md) { font-size: 28px; }
+  @media (min-width: $screen-lg) { font-size: 32px; }
+}
+
+h3, .h3 {
+  font-size: 20px;
+  @media (min-width: $screen-md) { font-size: 22px; }
+  @media (min-width: $screen-sm) { font-size: 24px; }
+}
+
+h4, .h4 {
+  font-size: 16px;
+  @media (min-width: $screen-md) { font-size: 18px; }
+  @media (min-width: $screen-sm) { font-size: 20px; }
+}
+
+h5, .h5, h6, .h6 {
+  @include rem(font-size, 1rem);
+}
+
+a {
+  text-decoration: none;
+  color: $color-blue;
+  &:hover { color: darken($color-blue, 10); }
+}

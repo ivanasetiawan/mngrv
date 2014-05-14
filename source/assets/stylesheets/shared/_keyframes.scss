@@ -1,0 +1,31 @@
+/* -----     Keyframes    ----- */
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+// ltr = left to right
+@-webkit-keyframes slideLtr {
+  0%   { left: -100%; }
+  100% { left: 0; }
+}
+@keyframes slideLtr {
+  0%   { left: -100%; }
+  100% { left: 0; }
+}
+
+// rtl = right to left
+@-webkit-keyframes slideRtl {
+  0%   { right: -100%; }
+  25%  { right: -100%; }
+  100% { right: 0; }
+}
+@keyframes slideRtl {
+  0%   { right: -100%; }
+  25%  { right: -100%; }
+  100% { right: 0; }
+}

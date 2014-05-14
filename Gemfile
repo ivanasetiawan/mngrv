@@ -9,7 +9,7 @@ gem 'middleman-autoprefixer'
 
 # assets
 gem 'kramdown'
-gem 'stylus'
+# gem 'stylus'
 gem 'coffee-script'
 gem 'sass' # required for rails-assets
 gem 'rails-assets-normalize-css', require: false

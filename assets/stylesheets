@@ -1,0 +1,43 @@
+/*
+Syntax error: Invalid property: "Backtrace:" (no value).
+        on line 4 of assets/stylesheets
+
+1: /*
+2: Errno::ENOENT: No such file or directory - assets/stylesheets
+3: 
+4: Backtrace:
+5: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `read'
+6: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `update_stylesheet'
+7: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+8: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `each'
+9: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+
+Backtrace:
+assets/stylesheets:4
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:737:in `parse_property'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:699:in `parse_property_or_rule'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:665:in `parse_line'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:543:in `build_tree'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:562:in `block in append_children'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:561:in `each'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:561:in `append_children'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:412:in `_to_tree'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:274:in `render'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `each'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:221:in `watch'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin.rb:108:in `method_missing'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/exec.rb:509:in `watch_or_update'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/exec.rb:346:in `process_result'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/exec.rb:43:in `parse'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/exec.rb:22:in `parse!'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/bin/sass:13:in `<top (required)>'
+/Users/ivana/.rbenv/versions/2.0.0-p247/bin/sass:23:in `load'
+/Users/ivana/.rbenv/versions/2.0.0-p247/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of assets/stylesheets\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory - assets/stylesheets\A 3: \A 4: Backtrace:\A 5: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `read'\A 6: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `update_stylesheet'\A 7: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'\A 8: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `each'\A 9: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'"; }

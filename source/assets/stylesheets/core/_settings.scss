@@ -1,0 +1,127 @@
+/* colors of styleguide */
+$color-blue-dark:       #001f37;
+$color-blue:        #005184;
+$color-blue-light:      #85bce9;
+$color-blue-lightest:     #c4daf3;
+$color-yellow:        #ffdd00;
+$color-orange:        #f6861f;
+$color-pink:        #ec008c;
+$color-green:         #68bd45;
+$color-purple:        #421f62;
+$color-red:         #bd0d2e;
+
+$color-black:         #222;
+$color-white:         #fff;
+
+$color-blue:          #0099b5;
+$color-blue-dark:     #304144;
+
+$color-grey:          #97a0a1;
+
+$rem-with-px-fallback:    true;
+
+/* -----     FONTS     ----- */
+$serif:                   Georgia, Times New Roman, Times, serif;
+$monospaced:              Monaco, Consolas, Lucida Console, Bitstream Vera Sans Mono, Courier New, monospace;
+$font-mangrove:           gothamBook;
+$font-mangrove-bold:      gothamBold;
+
+/* -----     GRID + BREAKPOINTS     ----- */
+
+$grid-columns:        12;
+
+$gutter-xs:         20px;
+$gutter-sm:         20px;
+$gutter-md:         30px;
+$gutter-lg:         40px;
+$gutter-xl:         40px;
+
+// Extra small screen / phone
+$screen-xxs:        0 !default;
+$screen-xs:         380px !default;
+
+// Small screen / tablet + portrait
+$screen-sm:                 762px !default;
+
+// Medium screen / tablet + landscape
+$screen-md:                 992px !default;
+
+// Large screen / desktop
+$screen-lg:         1162px !default;
+
+// Extra large screen / wide desktop
+$screen-xl:         1386px !default;
+
+$screen-xs-max:       ($screen-sm - 1) !default;
+$screen-sm-max:             ($screen-md - 1) !default;
+$screen-md-max:       ($screen-lg - 1) !default;
+$screen-lg-max:       ($screen-xl - 1) !default;
+
+$site-width-xs:       300px;
+$site-width-sm:       762px;
+$site-width-md:       962px;
+$site-width-lg:       1162px;
+$site-width-xl:       1386px;
+
+$breakpoints: (
+  ('xs', $screen-xxs, $site-width-xs, $gutter-xs),
+  ('sm', $screen-sm, $site-width-sm, $gutter-sm),
+  ('md', $screen-md, $site-width-md, $gutter-md),
+  ('lg', $screen-lg, $site-width-lg, $gutter-lg),
+  ('xl', $screen-xl, $site-width-xl, $gutter-xl)
+);
+
+
+/* -----     OTHER UTILITIES     ----- */
+
+$border-radius:       3px;
+
+
+/* -----     THEMES     ----- */
+
+//  1. theme name
+//  2a. background-color
+//  2b. text-color
+//  3a. background-color:hover
+//  3b. text-color:hover
+
+$themes:('blue-dark',
+      ($color-blue-dark, $color-white),
+      (darken($color-blue-dark, 10), $color-white)
+    ),
+    ('blue',
+      ($color-blue, $color-white),
+      (darken($color-blue, 10), $color-white)
+    ),
+    ('yellow',
+      ($color-yellow, $color-white),
+      (darken($color-yellow, 10), $color-white)
+    ),
+    ('orange',
+      ($color-orange, $color-white),
+      (darken($color-orange, 10), $color-white)
+    ),
+    ('pink',
+      ($color-pink, $color-white),
+      (darken($color-pink, 10), $color-white)
+    ),
+    ('green',
+      ($color-green, $color-white),
+      (darken($color-green, 10), $color-white)
+    ),
+    ('purple',
+      ($color-purple, $color-white),
+      (darken($color-purple, 10), $color-white)
+    ),
+    ('red',
+      ($color-red, $color-white),
+      (darken($color-red, 10), $color-white)
+    ),
+    ('grey',
+      ($color-grey, $color-white),
+      (darken($color-grey, 10), $color-white)
+    ),
+    ('black',
+      ($color-black, $color-white),
+      (darken($color-black, 10), $color-white)
+    );
