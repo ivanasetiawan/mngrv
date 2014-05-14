@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+mngrv
+=====
+
+Mangrove Frontend
+
+
 # FUARK — Jack's smirking template
 
 This is not special [Middleman](http://middlemanapp.com/) template.
@@ -60,3 +67,4 @@ As a general rule make it a point not to modify files in vendor directory.
 
 
 [mvcss]: http://mvcss.github.io/
+
