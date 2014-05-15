@@ -1,26 +1,22 @@
 /*
-Syntax error: Invalid property: "Backtrace:" (no value).
-        on line 4 of assets/stylesheets
+Syntax error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
+        on line 41 of assets/stylesheets
 
-1: /*
-2: Errno::ENOENT: No such file or directory - assets/stylesheets
-3: 
-4: Backtrace:
-5: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `read'
-6: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `update_stylesheet'
-7: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
-8: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `each'
-9: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+36: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/bin/sass:13:in `<top (required)>'
+37: /Users/ivana/.rbenv/versions/2.0.0-p247/bin/sass:23:in `load'
+38: /Users/ivana/.rbenv/versions/2.0.0-p247/bin/sass:23:in `<main>'
+39: *\/
+40: body:before {
+41:   white-space: pre;
+42:   font-family: monospace;
+43:   content: "Syntax error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of assets/stylesheets\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory - assets/stylesheets\A 3: \A 4: Backtrace:\A 5: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `read'\A 6: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `update_stylesheet'\A 7: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'\A 8: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `each'\A 9: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'"; }
 
 Backtrace:
-assets/stylesheets:4
-/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:737:in `parse_property'
-/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:699:in `parse_property_or_rule'
-/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:665:in `parse_line'
-/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:543:in `build_tree'
-/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:562:in `block in append_children'
-/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:561:in `each'
-/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:561:in `append_children'
+assets/stylesheets:41
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:491:in `block in tabulate'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:449:in `each'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:449:in `each_with_index'
+/Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:449:in `tabulate'
 /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:412:in `_to_tree'
 /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/engine.rb:274:in `render'
 /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
@@ -40,4 +36,4 @@ assets/stylesheets:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of assets/stylesheets\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory - assets/stylesheets\A 3: \A 4: Backtrace:\A 5: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `read'\A 6: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `update_stylesheet'\A 7: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'\A 8: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `each'\A 9: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'"; }
+  content: "Syntax error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 41 of assets/stylesheets\A \A 36: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/bin/sass:13:in `<top (required)>'\A 37: /Users/ivana/.rbenv/versions/2.0.0-p247/bin/sass:23:in `load'\A 38: /Users/ivana/.rbenv/versions/2.0.0-p247/bin/sass:23:in `<main>'\A 39: */\A 40: body:before {\A 41:   white-space: pre;\A 42:   font-family: monospace;\A 43:   content: \"Syntax error: Invalid property: \\"Backtrace:\\" (no value).\A         on line 4 of assets/stylesheets\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory - assets/stylesheets\A 3: \A 4: Backtrace:\A 5: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `read'\A 6: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:405:in `update_stylesheet'\A 7: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'\A 8: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `each'\A 9: /Users/ivana/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'\"; }"; }

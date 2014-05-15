@@ -13,7 +13,12 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
 
-activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 9']
+  config.cascade  = false
+end
+
+activate :sprockets
 
 # Build-specific configuration
 configure :build do
@@ -22,5 +27,3 @@ configure :build do
   activate :minify_javascript
   activate :relative_assets
 end
-
-activate :directory_indexes

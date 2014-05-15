@@ -2,9 +2,9 @@ source 'http://rubygems.org'
 source 'https://rails-assets.org'
 
 gem 'middleman-core'
-gem 'middleman-sprockets'
+gem "middleman-sprockets"
 
-gem 'middleman-livereload'
+gem "middleman-livereload", "~> 3.1.0"
 gem 'middleman-autoprefixer'
 
 # assets

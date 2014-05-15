@@ -1,0 +1,931 @@
+/* -----     Keyframes    ----- */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes slideLtr {
+  0% {
+    left: -100%; }
+
+  100% {
+    left: 0; } }
+@keyframes slideLtr {
+  0% {
+    left: -100%; }
+
+  100% {
+    left: 0; } }
+@-webkit-keyframes slideRtl {
+  0% {
+    right: -100%; }
+
+  25% {
+    right: -100%; }
+
+  100% {
+    right: 0; } }
+@keyframes slideRtl {
+  0% {
+    right: -100%; }
+
+  25% {
+    right: -100%; }
+
+  100% {
+    right: 0; } }
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+@font-face {
+  font-family: 'gothamBook';
+  src: url("../fonts/Gotham-Book.ttf");
+  font-style: normal; }
+@font-face {
+  font-family: 'gothamBold';
+  src: url("../fonts/Gotham-Bold.ttf");
+  font-style: normal; }
+/* colors of styleguide */
+/* -----     FONTS     ----- */
+/* -----     GRID + BREAKPOINTS     ----- */
+/* -----     OTHER UTILITIES     ----- */
+/**
+ * Source: http://nicolasgallagher.com/micro-clearfix-hack/
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+/* ---   Clear the list styling   --- */
+.clearlist {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* ---   Solve space issue caused by margin on heading. Solution is by giving 1px padding on top and bottom   --- */
+.typo-haslayout {
+  padding-top: 1px;
+  padding-bottom: 1px; }
+
+/* ---   Margins   --- */
+.margin-0 {
+  margin: 0px !important; }
+
+.margin-top-0 {
+  margin-top: 0px !important; }
+
+.margin-top-10 {
+  margin-top: 10px !important; }
+
+.margin-top-20 {
+  margin-top: 20px !important; }
+
+.margin-top-30 {
+  margin-top: 30px !important; }
+
+.margin-top-40 {
+  margin-top: 40px !important; }
+
+.margin-top-50 {
+  margin-top: 50px !important; }
+
+.margin-bottom-0 {
+  margin-bottom: 0px !important; }
+
+.margin-bottom-5 {
+  margin-bottom: 5px !important; }
+
+.margin-bottom-10 {
+  margin-bottom: 10px !important; }
+
+.margin-bottom-20 {
+  margin-bottom: 20px !important; }
+
+.margin-bottom-30 {
+  margin-bottom: 30px !important; }
+
+.margin-bottom-40 {
+  margin-bottom: 40px !important; }
+
+.margin-bottom-50 {
+  margin-bottom: 50px !important; }
+
+.margin-left-0 {
+  margin-left: 0px !important; }
+
+.margin-left-10 {
+  margin-left: 10px !important; }
+
+.margin-left-20 {
+  margin-left: 20px !important; }
+
+.margin-left-30 {
+  margin-left: 30px !important; }
+
+.margin-left-40 {
+  margin-left: 40px !important; }
+
+.margin-left-50 {
+  margin-left: 50px !important; }
+
+.margin-right-0 {
+  margin-right: 0px !important; }
+
+.margin-right-10 {
+  margin-right: 10px !important; }
+
+.margin-right-20 {
+  margin-right: 20px !important; }
+
+.margin-right-30 {
+  margin-right: 30px !important; }
+
+.margin-right-40 {
+  margin-right: 40px !important; }
+
+.margin-right-50 {
+  margin-right: 50px !important; }
+
+/* --- Padding --- */
+.padding-0 {
+  padding: 0px !important; }
+
+.padding-20 {
+  padding: 20px !important; }
+
+.padding-top-0 {
+  padding-top: 0px !important; }
+
+.padding-top-10 {
+  padding-top: 10px !important; }
+
+.padding-top-20 {
+  padding-top: 20px !important; }
+
+.padding-top-30 {
+  padding-top: 30px !important; }
+
+.padding-top-40 {
+  padding-top: 40px !important; }
+
+.padding-top-50 {
+  padding-top: 50px !important; }
+
+.padding-bottom-0 {
+  padding-bottom: 0px !important; }
+
+.padding-bottom-10 {
+  padding-bottom: 10px !important; }
+
+.padding-bottom-20 {
+  padding-bottom: 20px !important; }
+
+.padding-bottom-30 {
+  padding-bottom: 30px !important; }
+
+.padding-bottom-40 {
+  padding-bottom: 40px !important; }
+
+.padding-bottom-50 {
+  padding-bottom: 50px !important; }
+
+.padding-left-0 {
+  padding-left: 0px !important; }
+
+.padding-left-10 {
+  padding-left: 10px !important; }
+
+.padding-left-20 {
+  padding-left: 20px !important; }
+
+.padding-left-30 {
+  padding-left: 30px !important; }
+
+.padding-left-40 {
+  padding-left: 40px !important; }
+
+.padding-left-50 {
+  padding-left: 50px !important; }
+
+.padding-right-0 {
+  padding-right: 0px !important; }
+
+.padding-right-10 {
+  padding-right: 10px !important; }
+
+.padding-right-20 {
+  padding-right: 20px !important; }
+
+.padding-right-30 {
+  padding-right: 30px !important; }
+
+.padding-right-40 {
+  padding-right: 40px !important; }
+
+.padding-right-50 {
+  padding-right: 50px !important; }
+
+body {
+  color: #304144;
+  background: #f7f7f7;
+  font-size: 14px;
+  font-family: gothamBook;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  line-height: 1.5;
+  background-color: #eaedee; }
+  @media (min-width: 762px) {
+    body {
+      font-size: 16px; } }
+  @media (min-width: 992px) {
+    body {
+      font-size: 18px; } }
+
+a:link {
+  color: #0099b5; }
+a:visited {
+  color: #304144; }
+a:active, a:hover {
+  color: #304144; }
+
+p, pre {
+  padding: 0;
+  margin: 0 0 1.5em; }
+
+pre, code {
+  color: #222222;
+  font-family: Monaco, Consolas, Lucida Console, Bitstream Vera Sans Mono, Courier New, monospace;
+  font-size: 88.8%; }
+
+pre code {
+  font-size: 1em; }
+
+img {
+  border: 0; }
+
+ol,
+ul {
+  margin-top: 16px;
+  margin-top: 1rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  padding-left: 24px;
+  padding-left: 1.5rem; }
+
+ul {
+  list-style-type: square; }
+
+li {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem; }
+
+.push--left {
+  padding-left: 20px; }
+  @media (min-width: 992px) {
+    .push--left {
+      padding-left: 300px !important; } }
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+  position: relative; }
+  @media (min-width: 992px) {
+    .container {
+      padding: 0 30px; } }
+  @media (min-width: 1162px) {
+    .container {
+      padding: 0 40px; } }
+
+.mainmenu {
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 10; }
+  .mainmenu ul, .mainmenu h1 {
+    display: none; }
+  .mainmenu.is-fixed {
+    position: fixed; }
+  @media (min-width: 992px) {
+    .mainmenu {
+      width: 300px; }
+      .mainmenu h1, .mainmenu ul {
+        display: block; }
+      .mainmenu ul {
+        width: 190px;
+        margin: 0 auto; } }
+
+.mangrove {
+  width: 190px;
+  height: 33px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  display: block;
+  background: url(../images/logo.png) no-repeat center; }
+
+.hellow {
+  max-width: 90%;
+  color: white;
+  padding: 30px; }
+  @media (min-width: 992px) {
+    .hellow {
+      max-width: 50%;
+      position: absolute;
+      bottom: 0;
+      padding: 50px; } }
+
+.btns-centered {
+  text-align: center;
+  margin: auto; }
+
+.box-float--left {
+  box-sizing: border-box;
+  padding: 30px; }
+  @media (min-width: 992px) {
+    .box-float--left {
+      float: left;
+      width: 50%;
+      padding: 50px; } }
+
+.bg--white {
+  background: white; }
+
+.bg-cover {
+  background: url(../images/bg-header.jpg) no-repeat top center;
+  background-size: cover !important;
+  position: relative;
+  color: white; }
+  .bg-cover h1, .bg-cover h2 {
+    text-shadow: rgba(0, 0, 0, 0.3) 0 0 3px; }
+
+/*doc
+---
+title: Typography
+name: typography
+category: Typography
+---
+
+Font we're using are:
+Gotham
+
+```html_example
+<h1>This is H1</h1>
+<h2>This is H2</h2>
+```
+*/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: gothamBook;
+  font-weight: normal;
+  line-height: 1.25;
+  margin-top: 0; }
+
+h1, .h1 {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  font-size: 45px;
+  font-family: gothamBold;
+  line-height: 1; }
+  @media (min-width: 992px) {
+    h1, .h1 {
+      font-size: 50px; } }
+  @media (min-width: 1162px) {
+    h1, .h1 {
+      font-size: 56px; } }
+
+.h1-alt {
+  font-size: 35px;
+  font-family: gothamBold;
+  line-height: 1; }
+  @media (min-width: 992px) {
+    .h1-alt {
+      font-size: 40px; } }
+  @media (min-width: 1162px) {
+    .h1-alt {
+      font-size: 46px; } }
+
+.strong, strong {
+  font-family: gothamBold; }
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin-bottom: .5em; }
+  h2 + p, h2 + ol, h2 + ul, .h2 + p, .h2 + ol, .h2 + ul, h3 + p, h3 + ol, h3 + ul, .h3 + p, .h3 + ol, .h3 + ul, h4 + p, h4 + ol, h4 + ul, .h4 + p, .h4 + ol, .h4 + ul, h5 + p, h5 + ol, h5 + ul, .h5 + p, .h5 + ol, .h5 + ul, h6 + p, h6 + ol, h6 + ul, .h6 + p, .h6 + ol, .h6 + ul {
+    margin-top: 0; }
+
+h2, .h2 {
+  font-size: 25px; }
+  @media (min-width: 992px) {
+    h2, .h2 {
+      font-size: 28px; } }
+  @media (min-width: 1162px) {
+    h2, .h2 {
+      font-size: 32px; } }
+
+h3, .h3 {
+  font-size: 20px; }
+  @media (min-width: 992px) {
+    h3, .h3 {
+      font-size: 22px; } }
+  @media (min-width: 762px) {
+    h3, .h3 {
+      font-size: 24px; } }
+
+h4, .h4 {
+  font-size: 16px; }
+  @media (min-width: 992px) {
+    h4, .h4 {
+      font-size: 18px; } }
+  @media (min-width: 762px) {
+    h4, .h4 {
+      font-size: 20px; } }
+
+h5, .h5, h6, .h6 {
+  font-size: 16px;
+  font-size: 1rem; }
+
+a {
+  text-decoration: none;
+  color: #0099b5; }
+  a:hover {
+    color: #006e82; }
+
+/*doc
+---
+title: Buttons
+name: button
+category: Base CSS
+---
+
+Button styles can be applied to any element. Typically you'll want to
+use either a `<button>` or an `<a>` element:
+
+```html_example
+<button class="btn btnDefault">Click</button>
+<a class="btn btnDefault" href="http://trulia.com">Don't click</a>
+```
+
+If your button is actually a link to another page, please use the
+`<a>` element, while if your button performs an action, such as submitting
+a form or triggering some javascript event, then use a `<button>` element.
+
+##Button Sizes
+There are three 3 sizes for buttons: Large, medium (default)
+and small. Simply apply the size modifier class for the desired size.
+There is also an additional modifier that will make the button take the
+full width of the container. It may be used with the any of the button
+size and style modifiers.
+
+Button                                                            | Modifier Class
+----------------------------------------------------------------- | -----------------
+<a class="btn btn--blue">blue button</a>                | `btn btn--blue`
+<a class="btn">Default</a>                              | `btn`
+<a class="btn btn--transparent">transparent button</a>                | `btn btn--transparent`
+*/
+button {
+  background: none;
+  border: 0; }
+
+/* Base button */
+.btn {
+  padding: 10px 20px;
+  line-height: 1;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: solid 2px #304144;
+  transition: all 0.5 ease-in;
+  cursor: pointer; }
+  .btn:hover {
+    border-color: #0099b5; }
+
+/* Button blue */
+.btn--blue {
+  background: #0099b5;
+  color: white !important;
+  border-color: #0099b5; }
+  .btn--blue:hover {
+    border-color: #304144;
+    background: #304144; }
+
+.btn--transparent {
+  background: transparent;
+  color: white !important;
+  border-color: white; }
+  .btn--transparent:hover {
+    background: #0099b5; }
+
+/*doc
+---
+title: Lists
+name: list
+category: Misc
+---
+
+Font we're using are:
+Gotham
+
+```html_example
+  <ul class="clearlist list-arrow">
+    <li><a href="">Our visit to the Brookly Beta conference</a></li>
+    <li><a href="">The Hack Battle 2014</a></li>
+    <li><a href="">42,195 km</a></li>
+  </ul>
+```
+*/
+.list-arrow li {
+  margin-bottom: 0;
+  padding-left: 20px;
+  position: relative; }
+  .list-arrow li a {
+    color: #0099b5; }
+  .list-arrow li:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    top: 7px;
+    left: 0; }
