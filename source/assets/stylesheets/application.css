@@ -447,6 +447,13 @@ th {
   padding-top: 1px;
   padding-bottom: 1px; }
 
+.caps {
+  text-transform: uppercase; }
+
+.centered {
+  text-align: center;
+  margin: 0 auto; }
+
 /* ---   Margins   --- */
 .margin-0 {
   margin: 0px !important; }
@@ -671,6 +678,8 @@ li {
   box-sizing: border-box;
   padding: 0 20px;
   position: relative; }
+  header .container {
+    position: static; }
   @media (min-width: 992px) {
     .container {
       padding: 0 30px; } }
@@ -721,6 +730,23 @@ li {
   text-align: center;
   margin: auto; }
 
+.theme .box-float--left img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 240px; }
+
+.theme--green {
+  color: white;
+  background-image: linear-gradient(to right, #21775e 50%, #42bbba 50%); }
+  .theme--green .box-float--left:first-child {
+    background: #21775e; }
+
+.theme--yellow {
+  color: white;
+  background-image: linear-gradient(to right, #f2bd1c 50%, #fee678 50%); }
+  .theme--yellow .box-float--left:first-child {
+    background: #f2bd1c; }
+
 .box-float--left {
   box-sizing: border-box;
   padding: 30px; }
@@ -728,7 +754,7 @@ li {
     .box-float--left {
       float: left;
       width: 50%;
-      padding: 50px; } }
+      padding: 80px 50px; } }
 
 .bg--white {
   background: white; }

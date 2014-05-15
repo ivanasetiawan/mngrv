@@ -12,6 +12,7 @@
   box-sizing: border-box;
   padding: 0 $gutter-xs;
   position: relative;
+  header & { position: static; }
   @media (min-width: $screen-md) {
     padding: 0 $gutter-md;
   }
@@ -65,3 +66,36 @@
   margin: auto;
 }
 
+
+// Create theming
+.theme {
+  // See if we can ALWAYS put the image centered
+  .box-float--left {
+    img {
+      vertical-align: middle;
+      max-width: 100%;
+      max-height: 240px;
+    }
+  }
+}
+.theme--green {
+  color: $color-white;
+  background-image:
+    linear-gradient(
+      to right,
+      $color-green 50%,
+      $color-green-light 50%
+    );
+  .box-float--left:first-child { background: $color-green; }
+}
+
+.theme--yellow {
+  color: $color-white;
+  background-image:
+    linear-gradient(
+      to right,
+      $color-yellow 50%,
+      $color-yellow-light 50%
+    );
+  .box-float--left:first-child { background: $color-yellow; }
+}

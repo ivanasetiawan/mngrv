@@ -1,7 +1,11 @@
 $(document).ready(function(){
+
+  var $document       = $(document);
+  var $window       = $(window);
+  var $equalColHeight   = $('.equal-heights');
+
   // Full height according to window
   $(window).on('resize',resizeThrottler);
-
   var resizeTimeout;
   function resizeThrottler() {
       window.clearTimeout(resizeTimeout);
@@ -24,4 +28,10 @@ $(document).ready(function(){
   });
   $(window).trigger('resize');
 
+
+  if ($.fn.equalColHeight) {
+    $equalColHeight.equalColHeight();
+  } else {
+    console.log('hs');
+  }
 });

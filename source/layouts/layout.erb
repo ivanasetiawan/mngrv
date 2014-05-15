@@ -21,7 +21,6 @@
 
   <body class="<%= page_classes %>">
     <%= yield %>
-    <%= javascript_include_tag  "jquery-1.11.1.min","application" %>
     <footer>
       <div class="container">
         <div class="box-float--left">
@@ -64,8 +63,8 @@
             </ul>
           </div>
         </div>
-
       </div>
     </footer>
+    <%= javascript_include_tag  "lib/jquery-1.11.1.min", "classes/jquery.equalColHeight.js", "application" %>
   </body>
 </html>
