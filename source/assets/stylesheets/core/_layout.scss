@@ -1,0 +1,67 @@
+// core/_layout applies to layout (margin, padding, sizing)
+// Used for layout and utility classes (`.pull-left`)
+
+.push--left {
+  padding-left: 20px;
+  @media (min-width: $screen-md) { padding-left: 300px !important; }
+}
+
+.container {
+  max-width: $site-width-xl;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 $gutter-xs;
+  position: relative;
+  @media (min-width: $screen-md) {
+    padding: 0 $gutter-md;
+  }
+  @media (min-width: $screen-lg) {
+    padding: 0 $gutter-lg;
+  }
+}
+
+.mainmenu {
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 10;
+  ul, h1 { display: none; }
+  &.is-fixed { position: fixed; }
+  @media (min-width: $screen-md) {
+    width: 300px;
+    h1, ul { display: block; }
+    ul {
+      width: 190px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.mangrove {
+  width: 190px;
+  height: 33px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  display: block;
+  background: url(../images/logo.png) no-repeat center;
+}
+
+.hellow {
+  max-width: 90%;
+  color: $color-white;
+  padding: 30px;
+  @media (min-width: $screen-md) {
+    max-width: 50%;
+    position: absolute;
+    bottom: 0;
+    padding: 50px;
+  }
+}
+
+.btns-centered {
+  text-align: center;
+  margin: auto;
+}
+

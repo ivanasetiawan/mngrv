@@ -1,0 +1,6 @@
+//= require normalize-css
+@import 'shared/_all';
+@import 'core/_all';
+@import 'modules/_all';
+@import 'components/_all';
+body {background: red;}

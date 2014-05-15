@@ -1,0 +1,3 @@
+module RailsAssetsNormalizeCss
+  VERSION = "3.0.1"
+end
