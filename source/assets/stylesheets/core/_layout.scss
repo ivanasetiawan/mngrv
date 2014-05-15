@@ -1,27 +1,36 @@
 // core/_layout applies to layout (margin, padding, sizing)
 // Used for layout and utility classes (`.pull-left`)
 
-body {
-  // padding-left: 400px;
-  position: relative;
-}
-
 .push--left {
   padding-left: 20px;
-  @media (min-width: $screen-md) { padding-left: 400px; }
+  @media (min-width: $screen-md) { padding-left: 400px !important; }
+}
+
+.container {
+  max-width: $site-width-xl;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 $gutter-xs;
+  position: relative;
+  @media (min-width: $screen-md) {
+    padding: 0 $gutter-md;
+  }
+  @media (min-width: $screen-lg) {
+    padding: 0 $gutter-lg;
+  }
 }
 
 .mainmenu {
   width: 20px;
-  height: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
+  left: 0;
   box-sizing: border-box;
   z-index: 10;
   ul, h1 { display: none; }
+  &.is-fixed { position: fixed; }
   @media (min-width: $screen-md) {
     width: 300px;
-    left: 100px;
     h1, ul { display: block; }
     ul {
       width: 190px;
