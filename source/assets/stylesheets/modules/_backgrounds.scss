@@ -1,8 +1,8 @@
 .bg--white { background: $color-white; }
 
 .bg-cover {
-  background: url(../images/bg-header.jpg) no-repeat top center fixed;
-  background-size: cover;
+  background: url(../images/bg-header.jpg) no-repeat top center;
+  background-size: cover !important;
   position: relative;
   color: $color-white;
   h1, h2 { text-shadow: rgba(0,0,0,0.3) 0 0 3px; }

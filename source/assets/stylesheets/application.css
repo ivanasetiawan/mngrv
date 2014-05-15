@@ -685,14 +685,6 @@ body {
         width: 190px;
         margin: 0 auto; } }
 
-.box-float--left {
-  box-sizing: border-box;
-  padding: 30px; }
-  @media (min-width: 992px) {
-    .box-float--left {
-      float: left;
-      width: 50%; } }
-
 .mangrove {
   width: 190px;
   height: 33px;
@@ -703,23 +695,34 @@ body {
 
 .hellow {
   max-width: 90%;
-  color: white; }
+  color: white;
+  padding: 30px; }
   @media (min-width: 992px) {
     .hellow {
       max-width: 50%;
       position: absolute;
-      bottom: 10%; } }
+      bottom: 0;
+      padding: 50px; } }
 
 .btns-centered {
   text-align: center;
-  margin: 19% auto; }
+  margin: auto; }
+
+.box-float--left {
+  box-sizing: border-box;
+  padding: 30px; }
+  @media (min-width: 992px) {
+    .box-float--left {
+      float: left;
+      width: 50%;
+      padding: 50px; } }
 
 .bg--white {
   background: white; }
 
 .bg-cover {
-  background: url(../images/bg-header.jpg) no-repeat top center fixed;
-  background-size: cover;
+  background: url(../images/bg-header.jpg) no-repeat top center;
+  background-size: cover !important;
   position: relative;
   color: white; }
   .bg-cover h1, .bg-cover h2 {
@@ -743,7 +746,8 @@ Gotham
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: gothamBook;
   font-weight: normal;
-  line-height: 1.25; }
+  line-height: 1.25;
+  margin-top: 0; }
 
 h1, .h1 {
   margin-bottom: 16px;

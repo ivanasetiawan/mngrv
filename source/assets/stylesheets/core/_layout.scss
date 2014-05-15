@@ -30,15 +30,6 @@ body {
   }
 }
 
-.box-float--left {
-  box-sizing: border-box;
-  padding: 30px;
-  @media (min-width: $screen-md) {
-    float: left;
-    width: 50%;
-  }
-}
-
 .mangrove {
   width: 190px;
   height: 33px;
@@ -51,15 +42,17 @@ body {
 .hellow {
   max-width: 90%;
   color: $color-white;
+  padding: 30px;
   @media (min-width: $screen-md) {
     max-width: 50%;
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
+    padding: 50px;
   }
 }
 
 .btns-centered {
   text-align: center;
-  margin: 19% auto;
+  margin: auto;
 }
 
