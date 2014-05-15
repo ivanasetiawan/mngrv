@@ -12,6 +12,7 @@
 
 # Ignore cache
 /.sass-cache
+source/.sass-cache/
 /.cache
 
 # Ignore vendor
