@@ -718,13 +718,13 @@ li {
 .hellow {
   max-width: 90%;
   color: white;
-  padding: 30px; }
+  padding: 30px 30px 30px 0; }
   @media (min-width: 992px) {
     .hellow {
       max-width: 50%;
       position: absolute;
       bottom: 0;
-      padding: 50px; } }
+      padding: 50px 50px 50px 0; } }
 
 .btns-centered {
   text-align: center;
@@ -737,15 +737,21 @@ li {
 
 .theme--green {
   color: white;
-  background-image: linear-gradient(to right, #21775e 50%, #42bbba 50%); }
-  .theme--green .box-float--left:first-child {
-    background: #21775e; }
+  background-color: #21775e; }
+  @media (min-width: 992px) {
+    .theme--green {
+      background-image: linear-gradient(to right, #21775e 50%, #42bbba 50%); }
+      .theme--green .box-float--left:first-child {
+        background: #21775e; } }
 
 .theme--yellow {
   color: white;
-  background-image: linear-gradient(to right, #f2bd1c 50%, #fee678 50%); }
-  .theme--yellow .box-float--left:first-child {
-    background: #f2bd1c; }
+  background-color: #f2bd1c; }
+  @media (min-width: 992px) {
+    .theme--yellow {
+      background-image: linear-gradient(to right, #f2bd1c 50%, #fee678 50%); }
+      .theme--yellow .box-float--left:first-child {
+        background: #f2bd1c; } }
 
 .box-float--left {
   box-sizing: border-box;
