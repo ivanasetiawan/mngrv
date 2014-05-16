@@ -70,3 +70,31 @@ button {
     background: $color-blue;
   }
 }
+
+.rounded-arrow {
+  background: $color-white;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  line-height: 43px;
+  transition: all 0.5s ease;
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $color-blue;
+  }
+  &:hover {
+    background: $color-black;
+  }
+}
+
+
+
+
+
+

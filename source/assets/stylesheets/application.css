@@ -454,6 +454,10 @@ th {
   text-align: center;
   margin: 0 auto; }
 
+.rounded {
+  border-radius: 50%;
+  display: inline-block; }
+
 /* ---   Margins   --- */
 .margin-0 {
   margin: 0px !important; }
@@ -724,7 +728,7 @@ li {
       max-width: 50%;
       position: absolute;
       bottom: 0;
-      padding: 50px 50px 50px 0; } }
+      padding: 50px 50px 100px 0; } }
 
 .btns-centered {
   text-align: center;
@@ -927,6 +931,25 @@ button {
   border-color: white; }
   .btn--transparent:hover {
     background: #0099b5; }
+
+.rounded-arrow {
+  background: white;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  line-height: 43px;
+  transition: all 0.5s ease; }
+  .rounded-arrow:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #0099b5; }
+  .rounded-arrow:hover {
+    background: #222222; }
 
 /*doc
 ---

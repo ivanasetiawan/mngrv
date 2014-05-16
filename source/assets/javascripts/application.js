@@ -4,7 +4,17 @@ $(document).ready(function(){
   var $window       = $(window);
   var $equalColHeight   = $('.equal-heights');
 
-  // Full height according to window
+  // Smooth scroll
+  $(".js_scrollto").on('click', function(e) {
+    e.preventDefault();
+    var position = $($(this).attr('href')).offset().top;
+    $('html, body').animate({scrollTop: position-20}, 400, 'swing');
+  });
+
+  // Start listening for window resize event(s)
+  $(window).windowResize(); 
+
+  // Full height according to window - combine with windowResize
   $(window).on('resize',resizeThrottler);
   var resizeTimeout;
   function resizeThrottler() {
@@ -12,7 +22,7 @@ $(document).ready(function(){
       // ignore resize events as long as an actualResizeHandler execution is in the queue
       resizeTimeout = setTimeout(function() {
           actualResizeHandler();
-          // The actualResizeHandler will execute at a rate of    3,5fps
+          // The actualResizeHandler will execute at a rate of 3,5fps
       }, 244);
   }
   function actualResizeHandler() {
@@ -28,10 +38,4 @@ $(document).ready(function(){
   });
   $(window).trigger('resize');
 
-
-  if ($.fn.equalColHeight) {
-    $equalColHeight.equalColHeight();
-  } else {
-    console.log('hs');
-  }
 });
